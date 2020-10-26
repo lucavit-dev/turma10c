@@ -1,0 +1,23 @@
+package br.com.colecoes.implementacao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TesteLista {
+
+	public static void main(String[] args) {
+		
+		List lista = new ArrayList();
+		
+		lista.add("DBA \n");
+		lista.add("DEV");
+		lista.add("DEVOPS");
+		lista.add("DBA");
+		
+		System.out.println(lista);
+		
+		
+		
+	}
+
+}//classe

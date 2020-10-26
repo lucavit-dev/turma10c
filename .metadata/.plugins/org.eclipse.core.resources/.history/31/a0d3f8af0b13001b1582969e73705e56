@@ -1,0 +1,19 @@
+package repeticao;
+
+public class ExemploFor {
+
+	public static void main(String[] args) {
+		/*
+		 * For: utilizamos, normalmente, quando não há interação do usuarios com a repetição
+		 * Sintaxe: 
+		 * 1º parametro: inicio da repetição com a definição do contador
+		 * 2º parametro: Condição, ou seja, até quando o laço será executado
+		 * 3º parametro: Qual a forma de contagem
+		 * 
+		 */
+		for (int contador=0;contador<1000;contador+=1) {
+			System.out.println(contador);
+		}
+	}
+
+}

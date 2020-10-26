@@ -1,0 +1,22 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioSimples {
+
+	public static void main(String[] args) {
+		String nome = JOptionPane.showInputDialog("Nome: ");
+		float idade = Integer.parseInt(JOptionPane.showInputDialog("Idade"));
+		
+		if (idade>17 && idade<70) {
+			System.out.printf("s% você é oObrigado a votar!", nome);
+		}
+
+		if (idade <16) {
+			System.out.printf("%s vc esta proibido a votar este ano", nome);
+		}
+		
+
+	}
+
+}

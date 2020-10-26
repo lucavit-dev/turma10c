@@ -1,0 +1,21 @@
+package variaveis;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		
+		String produto = "Abacaxi";
+		int codigo = 10;
+		int quantidade = 1;
+		double valor = 4.50;
+		double desconto = 0.10;
+		
+		System.out.println("Produto    : " + produto);
+		System.out.println("Código     : " + codigo);
+		System.out.println("Quantidade : " + quantidade);
+		System.out.printf ("Valor      : " + valor);
+		System.out.printf ("Produto s%, Código d%, qntd d%, Valor f%" , produto, codigo, quantidade, valor);
+
+	}
+
+}

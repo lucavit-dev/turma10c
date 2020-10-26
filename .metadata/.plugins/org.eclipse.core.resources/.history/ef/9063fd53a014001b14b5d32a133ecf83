@@ -1,0 +1,12 @@
+package br.com.ecommerce.modelo;
+
+public class Cliente {
+	
+	private int id;
+	private String nome;
+	private String fone;
+	private Endereco endereco;
+	
+	
+
+}

@@ -1,0 +1,34 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Endereco;
+import br.com.ecommerce.modelo.Produto;
+import br.com.ecommerce.util.Magica;
+
+public class ImplementarVenda {
+
+	public static void main(String[] args) {
+		
+		Produto produto = new Produto();
+		Cliente cliente = new Cliente ();
+		Endereco endereco = new Endereco();
+		
+		produto.setId(Magica.i("ID DO PRODUTO"));
+		produto.setDescricao(Magica.s("DESCRIÇAO").toUpperCase());
+		produto.setValorVenda(Magica.f("VALOR DO PRODUTO"));
+		produto.setQuantidade(Magica.i("QUANTIDADE"));
+		
+		cliente.setId(Magica.i("ID DO CLIENTE"));
+		cliente.setNome(Magica.s("NOME CLIENTE"));
+		cliente.setFone(Magica.s("TELEFON"));
+		cliente.setEndereco(endereco);
+		
+		System.out.println(produto.getAll());
+		System.out.println(cliente.getAll());
+		
+		
+		
+			
+		}
+
+	}

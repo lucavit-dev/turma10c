@@ -1,0 +1,45 @@
+package Exercicios;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio2 {
+
+	public static void main(String[] args) {
+		/*
+		 * (Fácil)
+		1º) Crie um programa que pergunte ao usuário o seu nível de escolaridade (Médio, Superior ou Pós) 
+		enquanto a resposta for válida, irá computando os totais dos níveis digitados, 
+		no final apresente somente o nível que foi mais votado.
+
+		(Complicadinho)
+		2º) Monte um programa que solicite a idade e o nome das pessoas. Ao terminar, (quando o usuário responder "SIM", que ele quer terminar) o programa deverá exibir:
+		 *** a pessoa mais velha (nome e idade), 
+		 **** a pessoa mais nova, 
+		 * a quantidade de pessoas maiores de idade e 
+		 ** a média entre as idades que foram digitadas.
+		 */
+
+		String escolaridade = JOptionPane.showInputDialog("Digite a escolaridade");
+		int totalM=0;
+		int totalS=0;
+		int totalP=0;
+		
+		if (escolaridade == "MEDIO");{
+			totalM=totalM+1;
+			JOptionPane.showInputDialog("Digite a escolaridade");
+		} if (escolaridade == "SUPERIOR");{
+			totalS=totalS+1;
+			JOptionPane.showInputDialog("Digite a escolaridade");
+		} if (escolaridade == "POS");{
+			totalP=totalP+1;
+			JOptionPane.showInputDialog("Digite a escolaridade");
+		}
+		
+		
+
+	}
+}
+
+
+
+

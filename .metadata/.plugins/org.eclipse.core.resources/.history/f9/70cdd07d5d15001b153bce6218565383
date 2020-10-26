@@ -1,0 +1,39 @@
+package br.com.unixyz.implementacao;
+
+import br.com.unixyz.util.Magica;
+
+public class ImplementarFormacao {
+
+	public static void main(String[] args) {
+		Formacao formacao = null;
+		
+		char resposta = Magica.s("Digite \n<T> Tecnologo \n<B> Bacharelado ou \n<M>) Médio").charAt(0);
+		if (resposta=='T') {
+			formacao = new Tecnologo (
+					Magica.s("Descrição"),
+					Magica.i("Duração"),
+					Magica.f("Mensalidade"),
+					true
+					);
+		}elso if (resposta=='B') {
+			formacao = new Bacharelado (
+					Magica.s("Descrição"),
+					Magica.i("Duração"),
+					Magica.f("Mensalidade"),
+					Magica.i("Carga Horaria Estagio").
+					Magica.s("TCC"
+					);
+		}else {
+			formacao = new Medio(
+					Magica.s("Descrição"),					
+					Magica.i("Duração"),
+					Magica.f("Mensalidade"),
+					Magica.s("Tipo")
+					);
+		}
+		
+		
+		
+	}
+
+}

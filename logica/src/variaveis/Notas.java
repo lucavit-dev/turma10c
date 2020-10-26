@@ -1,0 +1,29 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class Notas {
+
+	public static void main(String[] args) {
+		// Input=> nome, disciplina, duas notas. 
+		// Exibir o nome do aluno, a média e a disciplina.
+
+		String nome = JOptionPane.showInputDialog("Digite o nome do aluno: ");
+		String disciplina = JOptionPane.showInputDialog("Disciplina: ");
+		float nota1 = Float.parseFloat(JOptionPane.showInputDialog("Digite a 1ª nota: "));
+		float nota2 = Float.parseFloat(JOptionPane.showInputDialog("Digite a 2ª nota: "));
+		float media = (nota1+nota2)/2;
+
+		/*
+		 * Mostra a saída em forma de janela.
+		 * JOptionPane.showMessageDialog(null, nome + "\n" + disciplina + "\n" + media);
+		 */
+
+		System.out.println ("Nome do aluno:    " + nome);
+		System.out.println("Disciplina:        " + disciplina);
+		System.out.println("Média:             " + media);
+		JOptionPane.showMessageDialog(null, nome + "\n" + disciplina + "\n" + media);
+
+	}
+
+}

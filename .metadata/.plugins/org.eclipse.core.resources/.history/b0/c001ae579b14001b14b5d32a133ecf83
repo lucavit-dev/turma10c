@@ -1,0 +1,64 @@
+package br.com.unixyz.modelo;
+
+public class Professor {
+
+	private int id;
+	private String nome;
+	private String formacao;
+	private Endereco endereco;
+
+	public String getAll() {
+		return
+				"ID:     : " + id + "\n" +
+				"Nome    : " + nome + "\n" +
+				"Formação: " + formacao + "\n" +
+				"Endereço: \n" + endereco.getAll();
+	}
+
+	public void setAll (int id, String nome, String formaçao, Endereco endereco) {
+		this.id = id;
+		this.nome = nome;
+		this.formacao = formaçao;
+		this.endereco = endereco;
+	}
+
+	public Professor() {
+		super();
+	}
+
+	public Professor(int id, String nome, String formaçao, Endereco endereco) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.formacao = formaçao;
+		this.endereco = endereco;
+	}
+
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getFormaçao() {
+		return formacao;
+	}
+	public void setFormaçao(String formaçao) {
+		this.formacao = formaçao;
+	}
+	public Endereco getEndereco() {
+		return endereco;
+	}
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+
+
+} // classe

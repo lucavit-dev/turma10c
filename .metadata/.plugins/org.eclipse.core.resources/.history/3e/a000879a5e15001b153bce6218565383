@@ -1,0 +1,19 @@
+package br.com.unixyz.modelo;
+
+public class Tecnologo extends Formacao {
+	
+	private boolean planoExtendido;
+	
+	
+
+	public boolean isPlanoExtendido() {
+		return planoExtendido;
+	}
+
+	public void setPlanoExtendido(boolean planoExtendido) {
+		this.planoExtendido = planoExtendido;
+	}
+	
+	
+
+}

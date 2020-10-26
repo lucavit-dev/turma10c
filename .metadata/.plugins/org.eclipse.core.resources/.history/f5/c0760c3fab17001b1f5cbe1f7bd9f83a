@@ -1,0 +1,30 @@
+package br.com.excessoes.implementacao;
+
+import javax.swing.JOptionPane;
+
+public class TesteExcessao {
+
+	public static void main(String[] args) {
+		// Excessoes: não são controladas pelo programador
+		// Existem dois tipos: 
+		// A-) Checked: o Java verifica e nao deixa executar o código
+		// B-) Unchecked: só ocorre após a compilação.
+		try {
+			int numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
+			System.out.println("Resultado = " + (numero*10));
+		}catch (Exception e) {
+			System.out.println("Deu ruim");
+			e.printStackTrace();
+		} finally {
+			System.out.println("Até logo");
+		}
+
+
+
+
+
+
+
+	}
+
+}

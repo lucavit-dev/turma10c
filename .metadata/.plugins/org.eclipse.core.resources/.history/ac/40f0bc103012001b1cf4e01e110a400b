@@ -1,0 +1,19 @@
+package variaveis;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		
+		String produto = "Abacaxi";
+		int codigo = 10;		
+		double valor = 4.50;
+		int quantidade = 5;
+		double total = quantidade*valor;
+		
+		System.out.println("Produto                   : " + produto);
+		System.out.println("Total                     : " + total);
+		System.out.println("Total com desconto de 10% : " + quantidade);
+		
+	}
+
+}

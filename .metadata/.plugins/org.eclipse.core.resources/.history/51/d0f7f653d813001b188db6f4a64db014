@@ -1,0 +1,19 @@
+package br.com.casageral.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.casageral.modelo.CasaModelo;
+
+public class CasaTeste {
+
+	public static void main(String[] args) {
+		CasaModelo casa = new CasaModelo();
+		casa.preencherMarca (JOptionPane.showInputDialog("Digite a marca"));
+		casa.preencherValor(Integer.parseInt(JOptionPane.showInputDialog("Digite o valor")));
+		System.out.println(casa.retornarMarca());
+		System.out.println(casa.retornaValor());
+
+		
+	}
+
+}

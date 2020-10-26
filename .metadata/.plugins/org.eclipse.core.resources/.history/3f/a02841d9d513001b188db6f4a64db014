@@ -1,0 +1,15 @@
+package br.com.casageral.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.casageral.modelo.CasaModelo;
+
+public class CasaTeste {
+
+	public static void main(String[] args) {
+		CasaModelo casa = new CasaModelo();
+		casa.preencherMarca (JOptionPane.showInputDialog("Digite a marca"));
+		System.out.println("SAMSUNG");
+	}
+
+}

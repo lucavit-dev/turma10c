@@ -1,0 +1,24 @@
+package br.com.excessoes.implementacao;
+
+import javax.swing.JOptionPane;
+
+public class TesteExcessao {
+
+	public static void main(String[] args) {
+
+		try {
+			int numero = Integer.parseInt(JOptionPane.showInputDialog(""));
+			System.out.println("Resultado = " + (numero*10));
+		}catch (Exception e) {
+			System.out.println("Deu ruim");
+		}
+
+
+
+
+
+
+
+	}
+
+}

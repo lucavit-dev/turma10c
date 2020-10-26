@@ -1,0 +1,12 @@
+package br.com.casageral.teste;
+
+import br.com.casageral.modelo.CasaModelo;
+
+public class CasaTeste {
+
+	public static void main(String[] args) {
+		CasaModelo casa = new CasaModelo();
+		casa.preencherMarca("samsung");
+	}
+
+}

@@ -1,0 +1,23 @@
+package br.com.unixyz.implementacao;
+
+import javax.swing.JOptionPane;
+
+import br.com.unixyz.modelo.Aluno;
+
+public class ImplementarAluno3 {
+	
+	//Usando construtor cheio, retornando os set ja quando instancia o Objeto.
+
+	public static void main(String[] args) {
+		
+		Aluno aluno = new Aluno(
+				Integer.parseInt(JOptionPane.showInputDialog("RM")),
+				JOptionPane.showInputDialog("Nome").toUpperCase(),
+				JOptionPane.showInputDialog("E-mail").toLowerCase()				
+				);
+		
+		System.out.println(aluno.getAll());	
+		
+	}
+
+}//CLASSE

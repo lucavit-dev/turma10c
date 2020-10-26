@@ -1,0 +1,45 @@
+package br.com.casageral.modelo;
+
+public class CasaModelo {
+
+	private String marca;
+	private float valor;
+	private boolean status;
+	private int canal;
+	private int volume;
+
+	public void preencherMarca(String pMarca) {
+		marca=pMarca.toUpperCase();
+	}	
+	public String retornarMarca() {
+		return marca;
+	}
+	public void preencherValor(float pValor) {
+		valor=pValor;		
+	}
+
+	public float retornaValor() {
+		return valor;
+	}
+	public void ligar(float pLigar) {
+		status=true;
+	}
+
+	public String pLigar() {
+		status=true;
+		return "TV LIGADA";
+	}
+	public void desligar(float pDesligar) {
+		status=false;
+	}
+	public String pDesligar() {
+		status=false;
+		return "TV DESLIGADA";
+	}
+	
+	
+	
+	
+	
+	
+}

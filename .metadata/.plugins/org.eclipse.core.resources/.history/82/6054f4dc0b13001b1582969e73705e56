@@ -1,0 +1,24 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ExemploFor {
+
+	public static void main(String[] args) {
+		/*
+		 * For: utilizamos, normalmente, quando não há interação do usuarios com a repetição
+		 * Sintaxe: 
+		 * 1º parametro: inicio da repetição com a definição do contador
+		 * 2º parametro: Condição, ou seja, até quando o laço será executado
+		 * 3º parametro: Qual a forma de contagem
+		 * 
+		 */
+		
+		int tabuada = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor"));
+		
+		for (int contador=1;contador<11;contador++) {
+			System.out.println((tabuada*contador));
+		}
+	}
+
+}

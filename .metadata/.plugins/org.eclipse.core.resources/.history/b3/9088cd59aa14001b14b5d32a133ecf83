@@ -1,0 +1,48 @@
+package br.com.ecommerce.implementacao;
+
+import br.com.ecommerce.modelo.Cliente;
+import br.com.ecommerce.modelo.Endereco;
+import br.com.ecommerce.modelo.Produto;
+import br.com.ecommerce.modelo.Venda;
+import br.com.ecommerce.util.Magica;
+
+public class ImplementarVenda {
+
+	public static void main(String[] args) {
+		
+		Produto produto = new Produto();
+		Cliente cliente = new Cliente ();
+		Endereco endereco = new Endereco();
+		Venda venda = new Venda();
+		
+		produto.setId(Magica.i("ID do Produto"));
+		produto.setDescricao(Magica.s("Descrição").toUpperCase());
+		produto.setValorVenda(Magica.f("Valor da Venda"));
+		produto.setQuantidade(Magica.i("Quantidade"));
+		
+		cliente.setId(Magica.i("ID do Client"));
+		cliente.setNome(Magica.s("Nome do Cliente"));
+		cliente.setFone(Magica.s("Telefone"));
+		cliente.setEndereco(endereco);
+		
+		endereco.setLogradouro(Magica.s("Endereço Cliente"));
+		endereco.setNumero(Magica.s("Número"));
+		endereco.setComplemento(Magica.s("Complemento"));
+		endereco.setBairro(Magica.s("Bairro"));
+		endereco.setCidade(Magica.s("Cidade"));
+		endereco.setEstado(Magica.s("Estado"));
+		endereco.setCep(Magica.s("CEP"));
+		
+		venda.setNotaFiscal(Magica.i("Nota Fiscal"));
+		venda.setTotal(Magica.f("Total"));
+		venda.setDesconto(Magica.f("Desconto"));
+		venda.setData(Magica.s("Data"));
+		venda.setCliente(cliente);
+		venda.setProduto(produto);
+		
+			
+		System.out.println(venda.getAll());
+		System.out.println(venda.getCliente().getNome());
+		}
+
+	}

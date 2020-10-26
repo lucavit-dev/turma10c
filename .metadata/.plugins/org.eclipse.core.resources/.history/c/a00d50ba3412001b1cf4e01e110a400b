@@ -1,0 +1,21 @@
+package variaveis;
+
+import javax.swing.JOptionPane;
+
+public class VendaProduto {
+
+	public static void main(String[] args) {
+		
+		String produto = JOptionPane.showInputDialog("Digite o produto: ");
+		int codigo = Integer.parseInt(JOptionPane.showInputDialog("Digite o código do produto: "));		
+		double valor = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do produto: "));
+		int quantidade = 5;
+		double total = quantidade*valor;
+		
+		System.out.println("Produto                   : " + produto);
+		System.out.println("Total                     : " + total);
+		System.out.println("Total com desconto de 10% : " + (total*0.9));
+		
+	}
+
+}

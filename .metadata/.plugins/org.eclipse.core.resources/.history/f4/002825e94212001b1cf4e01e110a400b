@@ -1,0 +1,15 @@
+package variaveis;
+
+public class ManipulaString {
+
+	public static void main(String[] args) {
+		String email = "reginA@gaMA.academy";
+		System.out.println("Original: " + email);
+		System.out.println("Miniscula: " + email.toLowerCase());
+		System.out.println("Maiuscula: " + email.toUpperCase());
+		System.out.println("Qntde de caracteres: " + email.length());
+		System.out.println("Posição do @: " + email.indexOf("@"));
+		System.out.println("Exibir do 2º ao 4º caracter: " + email.substring(0,5));
+	}
+
+}
